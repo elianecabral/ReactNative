@@ -4,8 +4,8 @@ import Botao from "./src/components/botao";
 import Cabecalho from "./src/components/cabecalho";
 import Jogos from "./src/components/jogos";
 import Dados from "./dados/dadosJogos"; 
-
-
+import Lancamento from "./src/components/lancamentos";
+import DadosLancamento from "./dados/breve.js";
 
 
 export default function App() {
@@ -52,6 +52,23 @@ export default function App() {
           )}
         />
         </View>
+
+        <FlatList
+          horizontal={true}
+          data= {DadosLancamento}
+          keyExtractor = {(item) => item.id}
+          renderItem = { ({ item }) => (
+          
+          <Lancamento
+          titulo ={item.nome}
+          imagem = {item.imagem}
+          valor = {item.valor}
+          />
+          
+          )}
+        />
+
+
 
      </View>
   );
