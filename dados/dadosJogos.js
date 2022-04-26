@@ -6,7 +6,7 @@ const Jogos = [
         imagem : 'subway.jpg'
     },
     {
-        id : "01",
+        id : "02",
         nome : "Yugi Master Duel",
         valor : "Gratuito",
         imagem : 'yugi.jpg'
@@ -48,7 +48,7 @@ const Jogos = [
         imagem : 'CapaSplatoon.jpg',
     },
     {
-        id : "07",
+        id : "09",
         nome : "Mario Party Superstars",
         valor : "Gratuito",
         imagem : 'mario.jpg',
